@@ -1,0 +1,115 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 80px;
+  padding: 0 104px;
+  background-color: #fff;
+}
+
+.footer__copyright {
+  margin: 0;
+  color: var(--color-gray);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.footer__links,
+.footer__social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__links {
+  gap: 40px;
+}
+
+.footer__social {
+  gap: 24px;
+}
+
+.footer__link {
+  color: var(--color-ink);
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer__link:hover,
+.footer__social-link:hover {
+  opacity: 0.6;
+}
+
+.footer__social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-ink);
+  transition: opacity 0.2s ease;
+}
+
+.footer__social-link_type_github {
+  -webkit-mask: url('../../images/github.svg') center / 20px no-repeat;
+  mask: url('../../images/github.svg') center / 20px no-repeat;
+}
+
+.footer__social-link_type_facebook {
+  -webkit-mask: url('../../images/facebook.svg') center / 20px no-repeat;
+  mask: url('../../images/facebook.svg') center / 20px no-repeat;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    min-height: 64px;
+    padding: 0 40px;
+  }
+
+  .footer__nav {
+    gap: 32px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    position: relative;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 0;
+    padding: 20px 16px 16px;
+  }
+
+  .footer__copyright {
+    margin-top: 24px;
+    font-size: 13px;
+  }
+
+  .footer__nav {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer__link {
+    display: block;
+    font-size: 18px;
+    line-height: 48px;
+  }
+}
