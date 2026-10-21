@@ -8,9 +8,9 @@ function About() {
       <div className="about__info">
         <h2 className="about__title">Sobre o autor</h2>
         <p className="about__text">
-          Meu nome é Israel Lira, sou desenvolvedor FullStack e criador de uma plataforma SaaS
-          multiempresa de agendamentos, o Booking Calendar Pro, além de outros sistemas como controle
-          de ponto e fluxo de caixa.
+          Meu nome é Israel Lira, sou desenvolvedor FullStack e criador do SharkBooking, uma
+          plataforma SaaS multiempresa de agendamentos, além de vários outros sistemas que
+          desenvolvo e mantenho em produção.
         </p>
         <p className="about__text">
           Trabalho com HTML, CSS, JavaScript, React, Vite, Node.js, Express, MongoDB, PostgreSQL,
