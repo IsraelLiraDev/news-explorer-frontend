@@ -8,12 +8,18 @@ function About() {
       <div className="about__info">
         <h2 className="about__title">Sobre o autor</h2>
         <p className="about__text">
-          Esse bloco descreve o autor do projeto. Aqui você deve indicar seu nome, o que você faz e
-          quais tecnologias de desenvolvedor você conhece.
+          Meu nome é Israel Lira, sou desenvolvedor FullStack e criador de uma plataforma SaaS
+          multiempresa de agendamentos, o Booking Calendar Pro, além de outros sistemas como controle
+          de ponto e fluxo de caixa.
         </p>
         <p className="about__text">
-          Você também pode falar sobre sua experiência com o Practicum, o que aprendeu lá e como
-          pode ajudar clientes em potencial.
+          Trabalho com HTML, CSS, JavaScript, React, Vite, Node.js, Express, MongoDB, PostgreSQL,
+          autenticação com JWT, APIs REST, Nginx e PM2, e publico meus projetos em servidor próprio.
+        </p>
+        <p className="about__text">
+          Minha experiência no bootcamp foi incrível: aprendi muito, aprimorei bastante o que já
+          sabia e me profissionalizei. Hoje posso ajudar clientes a tirar ideias do papel, do
+          front-end ao back-end.
         </p>
       </div>
     </section>
