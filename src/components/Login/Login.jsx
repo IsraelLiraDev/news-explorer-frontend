@@ -4,7 +4,7 @@ import FormField from '../FormField/FormField';
 import useFormWithValidation from '../../utils/useFormWithValidation';
 
 function Login({
-  isOpen, onClose, onSubmit, onSwitchClick, errorMessage,
+  isOpen, onClose, onSubmit, onSwitchClick, errorMessage, isLoading,
 }) {
   const {
     values, errors, isValid, handleChange, resetForm,
@@ -28,8 +28,8 @@ function Login({
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
-      buttonText="Entrar"
-      isSubmitDisabled={!isValid}
+      buttonText={isLoading ? 'Enviando...' : 'Entrar'}
+      isSubmitDisabled={!isValid || isLoading}
       errorMessage={errorMessage}
       switchText="Inscreva-se"
       onSwitchClick={onSwitchClick}

@@ -1,14 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MESSAGE_EMPTY_KEYWORD } from '../../utils/constants';
 import './SearchForm.css';
 
 function SearchForm({ initialKeyword, onSearch }) {
-  const [keyword, setKeyword] = useState('');
+  const [keyword, setKeyword] = useState(initialKeyword);
   const [errorMessage, setErrorMessage] = useState('');
-
-  useEffect(() => {
-    setKeyword(initialKeyword);
-  }, [initialKeyword]);
 
   function handleChange(evt) {
     setKeyword(evt.target.value);

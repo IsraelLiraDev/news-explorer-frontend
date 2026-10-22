@@ -26,6 +26,7 @@ export const POPUP = {
   LOGIN: 'login',
   REGISTER: 'register',
   SUCCESS: 'success',
+  ERROR: 'error',
 };
 
 export const MESSAGE_EMPTY_KEYWORD = 'Por favor, insira uma palavra-chave';
@@ -40,3 +41,16 @@ export const MESSAGE_REMOVE_FROM_SAVED = 'Remover dos salvos';
 export const LINK_PRACTICUM = 'https://tripleten.com';
 export const LINK_GITHUB = 'https://github.com';
 export const LINK_FACEBOOK = 'https://facebook.com';
+
+// Endereço da API própria (back-end da Fase 2).
+export const MAIN_API_DEV_URL = 'http://localhost:3000';
+export const MAIN_API_PROD_URL = 'https://api-israel-news.duckdns.org';
+export const MAIN_API_BASE_URL = import.meta.env.PROD ? MAIN_API_PROD_URL : MAIN_API_DEV_URL;
+
+// A API exige imagem, texto e fonte; usados quando a notícia vem sem esses campos.
+export const FALLBACK_IMAGE_URL = 'https://placehold.co/400x272/e6e8eb/b6bcbf.png?text=Sem+imagem';
+export const FALLBACK_TEXT = 'Sem descrição disponível.';
+export const FALLBACK_SOURCE = 'Fonte desconhecida';
+
+export const MESSAGE_ACTION_ERROR = 'Não foi possível concluir a ação. Tente novamente mais tarde.';
+export const MESSAGE_SERVER_UNAVAILABLE = 'Servidor indisponível. Tente novamente mais tarde.';

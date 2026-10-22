@@ -29,3 +29,9 @@ src/
 ## Deploy
 
 _(adicionar o link do projeto publicado)_
+
+## Integração com a API (Fase 3)
+
+- Back-end: repositório `news-explorer-api`. Em desenvolvimento o front usa `http://localhost:3000`; no build de produção usa o domínio público da API (constante `MAIN_API_PROD_URL` em `src/utils/constants.js`).
+- Autenticação por JWT guardado no `localStorage` e validado no servidor (`GET /users/me`) ao abrir o app.
+- Rota `/saved-news` protegida (`ProtectedRoute`); sem login o usuário volta para `/` e o modal de login abre.
