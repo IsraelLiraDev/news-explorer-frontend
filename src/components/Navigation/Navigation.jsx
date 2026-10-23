@@ -1,9 +1,11 @@
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
 import './Navigation.css';
 
-function Navigation({
-  isLoggedIn, userName, onSignInClick, onSignOutClick,
-}) {
+function Navigation({ isLoggedIn, onSignInClick, onSignOutClick }) {
+  const currentUser = useContext(CurrentUserContext);
+
   return (
     <nav className="navigation">
       <ul className="navigation__list">
@@ -31,7 +33,7 @@ function Navigation({
       </ul>
       {isLoggedIn ? (
         <button className="navigation__button" type="button" onClick={onSignOutClick}>
-          <span className="navigation__user">{userName}</span>
+          <span className="navigation__user">{currentUser.name}</span>
           <span className="navigation__logout-icon" aria-hidden="true" />
           <span className="navigation__sr-only">Sair</span>
         </button>

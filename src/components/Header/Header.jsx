@@ -5,7 +5,6 @@ import './Header.css';
 function Header({
   theme,
   isLoggedIn,
-  userName,
   isMenuOpen,
   onMenuToggle,
   onSignInClick,
@@ -25,7 +24,6 @@ function Header({
       />
       <Navigation
         isLoggedIn={isLoggedIn}
-        userName={userName}
         onSignInClick={onSignInClick}
         onSignOutClick={onSignOutClick}
       />

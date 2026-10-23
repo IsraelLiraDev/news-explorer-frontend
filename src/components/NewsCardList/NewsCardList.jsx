@@ -11,7 +11,7 @@ function NewsCardList({
       {title && <h2 className="news-card-list__title">{title}</h2>}
       <ul className="news-card-list__list">
         {articles.map((article) => (
-          <li className="news-card-list__item" key={article.link}>
+          <li className="news-card-list__item" key={article._id || article.link}>
             <NewsCard
               variant={variant}
               article={article}

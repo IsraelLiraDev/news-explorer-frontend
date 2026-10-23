@@ -4,7 +4,7 @@ import FormField from '../FormField/FormField';
 import useFormWithValidation from '../../utils/useFormWithValidation';
 
 function Register({
-  isOpen, onClose, onSubmit, onSwitchClick, errorMessage,
+  isOpen, onClose, onSubmit, onSwitchClick, errorMessage, isLoading,
 }) {
   const {
     values, errors, isValid, handleChange, resetForm,
@@ -28,8 +28,8 @@ function Register({
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
-      buttonText="Inscrever-se"
-      isSubmitDisabled={!isValid}
+      buttonText={isLoading ? 'Enviando...' : 'Inscrever-se'}
+      isSubmitDisabled={!isValid || isLoading}
       errorMessage={errorMessage}
       switchText="Entre"
       onSwitchClick={onSwitchClick}
