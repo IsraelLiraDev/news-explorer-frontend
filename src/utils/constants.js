@@ -1,12 +1,3 @@
-// Endereço da News API. Em desenvolvimento a chave gratuita só funciona a partir do localhost.
-// Em produção (build) usa o proxy da TripleTen.
-export const NEWS_API_DEV_URL = 'https://newsapi.org/v2';
-export const NEWS_API_PROXY_URL = 'https://nomoreparties.co/news/v2';
-export const NEWS_API_BASE_URL = import.meta.env.PROD ? NEWS_API_PROXY_URL : NEWS_API_DEV_URL;
-export const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
-
-export const SEARCH_DAYS_RANGE = 7;
-export const SEARCH_PAGE_SIZE = 100;
 export const CARDS_PER_PAGE = 3;
 export const MAX_KEYWORDS_SHOWN = 3;
 
